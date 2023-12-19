@@ -1,0 +1,9 @@
+.canscroll {
+    overflow: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.canscroll::-webkit-scrollbar {
+    display: none;
+}

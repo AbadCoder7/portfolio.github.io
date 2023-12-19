@@ -1,0 +1,16 @@
+/*//////
+TITLES
+//////*/
+@font-face {
+    font-family: TitleHard;
+    src: url("fonts/PCPaintBoldLarge.ttf");
+}
+
+
+/*//////
+TEXT & PARAGRAPHS
+//////*/
+@font-face {
+    font-family: Text;
+    src: url("fonts/yoster.ttf");
+}
