@@ -1,0 +1,72 @@
+<html>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin: 0;
+            padding: 0;
+
+            background-color: black;
+
+            user-select: none;
+            -ms-user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .scene {
+            background-color: rgb(6, 0, 0);
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+
+    <head>
+        <!-- Scripts and Stylesheets -->
+        <link rel="stylesheet" href="photogra.css">
+
+        <!-- Modules -->
+        <script src="../ScreenRatioPack.js"></script>
+        <link rel="stylesheet" href="../canscroll.css">
+        <link rel="stylesheet" href="../fonts.css">
+
+        <!-- Title and Favicon-->
+        <title>Joshua Martinez's Portfolio - Photography</title>
+    </head>
+
+
+    <body>
+        <div style="aspect-ratio: 1.5 / 1;" class="scene canscroll" id="scene">
+
+            <div class="banner">Photography</div>
+
+            <div class="broadcast">
+                <div class="set" id="set" onclick="flipChannel()"></div>
+            </div>
+
+        </div>
+
+        <div class="door" onclick="window.location = 'doorway.html'"></div>
+    </body>
+
+
+    <script>
+        var count = 1;
+        setInterval(function() {
+            flipChannel();
+        }, 5000);
+
+        function flipChannel() {
+            document.getElementById("set").style.backgroundImage = "url('../img/set" + count + ".png')";
+            count++;
+
+            if (count == 4) {count = 1;}
+        }
+    </script>
+</html>

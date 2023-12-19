@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <!-- Modules -->
+        <link rel="stylesheet" href="../fonts.css">
+
+        <!-- Title and Favicon -->
+        <link rel="icon" type="image/x-icon" href="../img/door.png">
+        <title>Choose your Path!</title>
+    </head>
+
+    <body>
+
+        <div class="doors">
+            <div onclick="window.location='photoshop.html'" class="door"><p>Photoshop</p></div>
+            <div onclick="window.location='photography.html'" class="door" style="margin-left: 20vh; margin-right: 20vh;"><p>Photography</p></div>
+            <div onclick="window.location = '../index.html'" class="door"><p>Home</p></div>
+        </div>
+
+    </body>
+
+    <style>
+        html, body {
+            background-color: black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .doors {
+            height: 40%;
+            aspect-ratio: 3 / 1;
+
+            display: flex;
+            justify-content: center;
+        }
+        .doors .door {
+            height: 100%;
+            aspect-ratio: 0.5 / 1;
+
+            background-size: cover;
+            background-image: url("../img/door.png");
+
+            cursor: pointer;
+
+            color: white;
+            font-size: 2vh;
+        }
+        .doors .door p {
+            background-color: rgb(15, 15, 15);
+            margin: 0;
+            font-family: Text;
+            text-align: center;
+        }
+    </style>
+</html>
